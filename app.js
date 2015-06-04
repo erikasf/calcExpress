@@ -5,6 +5,7 @@ var app = express();
 
 
 app.set("view engine", "ejs");
+response.render("index.html")
 
 app.get("/add/:num1/:num2", function(request, response){
 	var result = request.params.num1 + request.params.num2;
